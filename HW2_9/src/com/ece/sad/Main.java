@@ -3,6 +3,10 @@ package com.ece.sad;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Customer cabCompany = new CabCompany();
+        cabCompany.accept(new Lyft());
+
+        System.out.println("");
+        cabCompany.accept(new Uber());
     }
 }

@@ -4,6 +4,7 @@ import java.util.Random;
 public class Main {
     private static final String chars[] = {"a", "1", "?"};
     private static final String fonts[] = {"Georgia", "Times New Roman"};
+    @SuppressWarnings("Duplicates")
     public static void main(String[] args) {
         Character c = null;
 

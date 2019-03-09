@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37840ac5-cf5f-446f-996e-d9a37efd2cec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/ece/sad/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ece/sad/Mediator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ece/sad/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ece/sad/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ece/sad/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="37840ac5-cf5f-446f-996e-d9a37efd2cec" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +115,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552098123798" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552098134236" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -162,12 +156,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552079337936</updated>
-      <workItem from="1552079341179" duration="3084000" />
+      <workItem from="1552079341179" duration="3187000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3084000" />
+    <option name="totallyTimeSpent" value="3187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="6" />

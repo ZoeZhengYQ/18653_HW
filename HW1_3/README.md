@@ -8,14 +8,14 @@ Specifically, the framework takes the raw reviews of restaurants from DataPlugin
 
 ## Data Structures
 
-##### `Restaurant`
+#### `Restaurant`
 Data structure for raw data of a single restaurant. \
 *Attributes*: \
 `String name`: Restaurant name \
 `String address`: Restaurant address \
 `List<String> reviews`: List of reviews 
 
-##### `RestaurantAnalysis`
+#### `RestaurantAnalysis`
 Data structure of analysis result of a restaurant. \
 *Attributes*: \
 `Restaurant restaurant`: Raw data of restaurant \
@@ -30,7 +30,7 @@ Data structure of analysis result of a restaurant. \
 	* NEGATIVE: 2
 	* VERY NEGATIVE: 3
 
-##### `RestaurantDatasetMap`
+#### `RestaurantDatasetMap`
 Data structure that helps to store restaurants in multiple dataset in the framework. \
 *Attibutes*: \
 `Map<String, Map<String, RestaurantAnalysis>> restMap`
@@ -42,7 +42,7 @@ Data structure that helps to store restaurants in multiple dataset in the framew
 
 ## Most Important APIs
 
-##### Framework APIs
+#### Framework APIs
 
 * `void readData(DataPlugin dataPlugin, String dataName, String source)`
 	Method that would invoke the specified data plugin to read data from source.
@@ -53,7 +53,7 @@ Data structure that helps to store restaurants in multiple dataset in the framew
 	Method that would return a partial list of `RestaurantAnalysis` in the dataset, which allow the framework to pass only the data user selected to be visualized.
 
 
-##### Data Plugin APIs
+#### Data Plugin APIs
 * `String getPluginName()`
 	Method that allow data plugins to customized their own name to be displayed on GUI window pop up list.
 
@@ -64,7 +64,7 @@ Data structure that helps to store restaurants in multiple dataset in the framew
 	Core API of data plugins. Takes in source from user, read and wrap the data as a list of `Restaurant` which would lately be stored in framework.
 
 
-##### Display Plugin APIs
+#### Display Plugin APIs
 * `String getPluginName()`
 	Method that allow display plugins to customized their own name to be displayed on GUI window pop up list.
 

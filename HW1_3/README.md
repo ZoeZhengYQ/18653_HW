@@ -13,7 +13,7 @@ Data structure for raw data of a single restaurant. \
 *Attributes*: \
 `String name`: Restaurant name \
 `String address`: Restaurant address \
-`List<String> reviews`: List of reviews \
+`List<String> reviews`: List of reviews 
 
 ##### `RestaurantAnalysis`
 Data structure of analysis result of a restaurant. \
@@ -45,19 +45,32 @@ Data structure that helps to store restaurants in multiple dataset in the framew
 ##### Framework APIs
 
 * `void readData(DataPlugin dataPlugin, String dataName, String source)`
-	Method that would invoke the specified data plugin to read data fom source
+	Method that would invoke the specified data plugin to read data from source.
 
 * `List<RestaurantAnalysis> analyses(List<Restaurant> restaurantList)`
-	Method that would call <a href="https://stanfordnlp.github.io/CoreNLP/">Standford coreNLP library</a> to analyse the input raw restaurant data and wrap the result into a list of `RestaurantAnalysis`
+	Method that would call <a href="https://stanfordnlp.github.io/CoreNLP/">Standford coreNLP library</a> to analyse the input raw restaurant data and wrap the result into a list of `RestaurantAnalysis`.
+* `List<RestaurantAnalysis> getRestListByName(String dataName, List<String> restNameList)`
+	Method that would return a partial list of `RestaurantAnalysis` in the dataset, which allow the framework to pass only the data user selected to be visualized.
+
 
 ##### Data Plugin APIs
+* `String getPluginName()`
+	Method that allow data plugins to customized their own name to be displayed on GUI window pop up list.
+
+* `String getDisplaySourceLabelName()`
+	Method that allow data plugins to customized their specification of the data source type they want to be displayed on GUI window.
+
+* `List<Restaurant> read(String source)`
+	Core API of data plugins. Takes in source from user, read and wrap the data as a list of `Restaurant` which would lately be stored in framework.
 
 
 ##### Display Plugin APIs
+* `String getPluginName()`
+	Method that allow display plugins to customized their own name to be displayed on GUI window pop up list.
 
-
-
-
+* `JPanel display(List<RestaurantAnalysis> restaurantAnalysisList)`
+	Core API of display plugins. Take a list of `RestaurantAnalysis` as input, process and plot, finally return a `JPanel` to the framework which would later be displayed on GUI window.
+<\br>
 
 ### How-Tos
 

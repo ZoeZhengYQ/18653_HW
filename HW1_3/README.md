@@ -9,20 +9,20 @@ Specifically, the framework takes the raw reviews of restaurants from DataPlugin
 ### Data Structures
 
 ##### `Restaurant`
-Data structure for raw data of a single restaurant.
-*Attributes*:
-`String name`: Restaurant name
-`String address`: Restaurant address
-`List<String> reviews`: List of reviews
+Data structure for raw data of a single restaurant. \
+*Attributes*: \
+`String name`: Restaurant name \
+`String address`: Restaurant address \
+`List<String> reviews`: List of reviews \
 
 ##### `RestaurantAnalysis`
-Data structure of analysis result of a restaurant.
-*Attributes*:
-`Restaurant restaurant`: Raw data of restaurant
-`Map<String, Integer> positiveKeywordMap`: Positive keyword mapped with their frequency count
-`Map<String, Integer> negativeKeywordMap`: Negative keyword mapped with their frequency count
-`Map<String, Integer> neutralKeywordMap`: Neutral keyword mapped with their frequency count
-`Map<SentimentType, Integer> sentimentMap`: Count map of sentiment analysis result of reviews
+Data structure of analysis result of a restaurant. \
+*Attributes*: \
+`Restaurant restaurant`: Raw data of restaurant \
+`Map<String, Integer> positiveKeywordMap`: Positive keyword mapped with their frequency count \
+`Map<String, Integer> negativeKeywordMap`: Negative keyword mapped with their frequency count \
+`Map<String, Integer> neutralKeywordMap`: Neutral keyword mapped with their frequency count \
+`Map<SentimentType, Integer> sentimentMap`: Count map of sentiment analysis result of reviews \
 * For example, 20 reviews in total, `sentimentMap` might be 
 	* VERY POSITIVE: 7
 	* POSITIVE: 5
@@ -31,14 +31,14 @@ Data structure of analysis result of a restaurant.
 	* VERY NEGATIVE: 3
 
 ##### `RestaurantDatasetMap`
-Data structure that helps to store restaurants in multiple dataset in the framework.
-*Attibutes*:
+Data structure that helps to store restaurants in multiple dataset in the framework. \
+*Attibutes*: \
 `Map<String, Map<String, RestaurantAnalysis>> restMap`
 
-     -  | Outer Map | Inner Map
-------------- | ------------- | --------
-Key   | DataSetName | Restaurant Name
- Value  | Map of Restaurant in DataSet | Restaurant Analysis Result
+|     -  | Outer Map | Inner Map |
+|------------- | ------------- | -------- |
+| Key   | DataSetName | Restaurant Name |
+| Value  | Map of Restaurant in DataSet | Restaurant Analysis Result |
 
 ### Most Important APIs
 

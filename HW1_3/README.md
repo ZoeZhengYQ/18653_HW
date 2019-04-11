@@ -1,12 +1,12 @@
 Team 18 - HW 5 - README
 ============
 
-### Framework Domain
+## Framework Domain
 Our Framework is a **Restaurant Review Analysis Framework**. 
 Specifically, the framework takes the raw reviews of restaurants from DataPlugins and parse those reviews using <a href="https://stanfordnlp.github.io/CoreNLP/">Standford coreNLP library</a>, the results of analysis contain review sentiment and keywords. Then it outputs the analyzed result to Display Plugins for visualization.
 
 
-### Data Structures
+## Data Structures
 
 ##### `Restaurant`
 Data structure for raw data of a single restaurant. \
@@ -40,7 +40,7 @@ Data structure that helps to store restaurants in multiple dataset in the framew
 | Key   | DataSetName | Restaurant Name |
 | Value  | Map of Restaurant in DataSet | Restaurant Analysis Result |
 
-### Most Important APIs
+## Most Important APIs
 
 ##### Framework APIs
 
@@ -72,7 +72,7 @@ Data structure that helps to store restaurants in multiple dataset in the framew
 	Core API of display plugins. Take a list of `RestaurantAnalysis` as input, process and plot, finally return a `JPanel` to the framework which would later be displayed on GUI window.
 <\br>
 
-### How-Tos
+## How-Tos
 
 #### Implement Plugins
 

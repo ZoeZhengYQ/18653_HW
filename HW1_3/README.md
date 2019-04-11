@@ -70,7 +70,6 @@ Data structure that helps to store restaurants in multiple dataset in the framew
 
 * `JPanel display(List<RestaurantAnalysis> restaurantAnalysisList)`
 	Core API of display plugins. Take a list of `RestaurantAnalysis` as input, process and plot, finally return a `JPanel` to the framework which would later be displayed on GUI window.
-<\br>
 
 ## How-Tos
 
